@@ -25,9 +25,9 @@ public class Conditional {
 			System.out.println("A등급");
 		} else if (score >= 80 && score < 90) {
 			System.out.println("B등급");
-		} else if (score >= 70 && score < 79) {
+		} else if (score >= 70 && score < 80) {
 			System.out.println("C등급");
-		} else if (score >= 60 && score < 69) {
+		} else if (score >= 60 && score < 70) {
 			System.out.println("D등급");
 		} else {
 			System.out.println("F등급");
@@ -35,16 +35,17 @@ public class Conditional {
 		scanner.close();
 	}
 	private static void ifEx2() {
-		Scanner scanner = new Scanner(System.in);
+//		Scanner scanner = new Scanner(System.in);
 		System.out.print("점수를 입력하세요: ");
 		int score = scanner.nextInt();
-		
-		if (score % 3 == 0) {
-			System.out.println("3의 배수입니다.");
-		} else {
-			System.out.println("3의 배수가 아닙니다.");
-		}
-		scanner.close();
+//		
+//		if (score % 3 == 0) {
+//			System.out.println("3의 배수입니다.");
+//		} else {
+//			System.out.println("3의 배수가 아닙니다.");
+//		}
+//		scanner.close();
+		System.out.print(score + '는' + (score%3 == 0? "3의배수입니다": "3의 배수가 아닙니다"));
 	}
 	// java case 문에는 char, string 도 가능
 	private static void switchEx3() {
