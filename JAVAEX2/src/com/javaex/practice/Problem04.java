@@ -15,11 +15,12 @@ public class Problem04 {
 				break;
 			} else {
 				for (int i = s; i <= e; i++) {
-					System.out.println(i);
+					System.out.print(i+"\t");
 				}
 				s += 1;
 				e += 1;
 				cnt += 1;
+				System.out.println();
 			}
 		}
 	}
