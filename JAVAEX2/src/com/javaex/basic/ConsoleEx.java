@@ -1,10 +1,25 @@
 package com.javaex.basic;
 
+// 클래스 import 
+
+import java.util.Scanner;
 public class ConsoleEx {
 
 	public static void main(String[] args) {
 		consoleOutputEx();
+		consoleInputEx();
 
+	}
+	// 콘솔 입력
+	private static void consoleInputEx() {
+		Scanner scanner = new Scanner(System.in); // 키보드 input()
+		System.out.print("이름은?");
+		String name = scanner.next(); // 문자열 입력
+		System.out.print("나이는?");
+		int age =scanner.nextInt();  // 정수 입력
+		System.out.println("이름: " + name + " 나이는 " + age);
+		// 사용이후 반드시 Scanner 닫아줘야한다.
+		scanner.close();
 	}
 	// 콘솔 출력
 	private static void consoleOutputEx() {
