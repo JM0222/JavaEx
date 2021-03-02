@@ -14,7 +14,7 @@ public class Conditional {
 		ifEx3();
 		
 		
-
+//asdas
 	}
 	private static void ifEx3() {
 		Scanner scanner = new Scanner(System.in);
