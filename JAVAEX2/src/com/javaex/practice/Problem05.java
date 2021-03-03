@@ -20,6 +20,7 @@ public class Problem05 {
 			}
 		}
 		System.out.printf("최댓값은 %d 입니다" , ans);
+		scanner.close();
 		
 	}
 
