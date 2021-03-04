@@ -6,5 +6,6 @@ public class Goods {
 	// 필드
 	String name;
 	int price;
-
+    // 생성자
+	// 메소드
 }

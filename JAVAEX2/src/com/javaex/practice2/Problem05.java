@@ -20,8 +20,8 @@ public class Problem05 {
 				}
 			}
 		}
-		System.out.println("총합:  "+ total);
-		System.out.println("평균:  "+ (total/cnt));
+		System.out.println("총합: "+ total);
+		System.out.println("평균: "+ (total/cnt));
 
 	}
 

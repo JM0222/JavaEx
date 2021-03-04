@@ -1,3 +1,4 @@
+
 package com.javaex.basic.reftypes;
 
 public class EnumEx {
