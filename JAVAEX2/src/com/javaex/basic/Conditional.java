@@ -37,7 +37,7 @@ public class Conditional {
 	private static void ifEx2() {
 //		Scanner scanner = new Scanner(System.in);
 		System.out.print("점수를 입력하세요: ");
-		int score = scanner.nextInt();
+//		int score = scanner.nextInt();
 //		
 //		if (score % 3 == 0) {
 //			System.out.println("3의 배수입니다.");
@@ -45,7 +45,7 @@ public class Conditional {
 //			System.out.println("3의 배수가 아닙니다.");
 //		}
 //		scanner.close();
-		System.out.print(score + '는' + (score%3 == 0? "3의배수입니다": "3의 배수가 아닙니다"));
+//		System.out.print(score + '는' + (score%3 == 0? "3의배수입니다": "3의 배수가 아닙니다"));
 	}
 	// java case 문에는 char, string 도 가능
 	private static void switchEx3() {
