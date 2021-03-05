@@ -18,5 +18,4 @@ public class TheOne extends Human implements KungfuSkill, Flyable {
 		System.out.println(name + ": I believe I can fly~");
 	}
 	
-	
 }

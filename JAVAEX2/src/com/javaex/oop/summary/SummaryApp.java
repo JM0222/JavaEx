@@ -22,7 +22,7 @@ public class SummaryApp {
 		
 		//	도장에 등록
 		dojang = new KungfuSkill[] {
-//				(KungfuSkill)h1,	//	캐스팅 될 수 없다
+//				(KungfuSkill)h1,	//	캐스팅 될 수 없다 참조타입이 쿵후 스킬이므로
 				(KungfuSkill)h2,
 //				(KungfuSkill)p1,	//	캐스팅 될 수 없다
 				(KungfuSkill)p2
