@@ -4,9 +4,39 @@ public class StringEx {
 
 	public static void main(String[] args) {
 //		stringBasic();
-		useMethods();
+//		useMethods();
+		StringBufferEx();
 
 	}
+	private static void StringBufferEx() {
+		// String 이 불변객체, StringBuffer 가변객체
+		StringBuffer sb = new StringBuffer("This");
+		
+		// 문자열 뒤에 추가 append
+		sb.append(" is pencil");
+		
+		// 문자열 삽입 insert
+		sb.insert(8,"my ");
+		System.out.println(sb);
+		
+		// 문자열 치환 replace
+		sb.replace(8, 10, "your");
+		System.out.println(sb);
+		
+		// 버퍼 길이 변경:setLength
+		sb.setLength(10);
+		System.out.println(sb);
+		
+		// 메소드 체이닝 (String 도 가능(문자열))
+		String s = new StringBuffer("This")
+					.append(" is pencil")
+					.insert(8, "my")
+					.toString();
+		System.out.println(s);
+		String s2 = "i like java";
+	}
+	
+	
 	private static void useMethods() {
 		// String 다양한 메서드들 
 		String source = "java Programming, javascript programming";
