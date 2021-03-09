@@ -1,6 +1,7 @@
 package com.javaex.api.collections.hash;
 
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
 
 public class HashtableEx {
@@ -25,8 +26,24 @@ public class HashtableEx {
 		map.put("202", new ClassRoom("Linux","R202"));
 		System.out.println("MAP: " + map);
 		
+		// 반복자 활용
+		Iterator<String> it = map.keySet().iterator();
+		while(it.hasNext()) {
+			ClassRoom item = map.get(it.next());
+			System.out.println(item);
+		}
+		
+		
+		// 삭제
+		map.remove("202");
+		
+		// clear
+		map.clear();
+		
 		// 특정 키가 포함되어 있는가?
 		System.out.println(map.containsKey("202"));
+		// 특정 value가 포함되어 있는가?
+		System.out.println(map.containsValue(new ClassRoom("Java")));
 	}
 
 }
