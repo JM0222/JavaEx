@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
-
+// 이미지, 사운드
 public class ByteArrayStreamEx {
 
 	public static void main(String[] args) {
