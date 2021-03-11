@@ -1,6 +1,10 @@
 package com.javaex.network.echoserver;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.net.ConnectException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -22,6 +26,17 @@ public class Client {
 			// 127.0.0.1 << local loop back 자기자신일경우
 			socket.connect(remote);
 			System.out.println("CLIENT: [서버에 연결되었습니다]");
+			
+			// 메세지 전송 //  소켓에서 출력 스트림 획득
+			OutputStream os = socket.getOutputStream();
+			Writer osw = new OutputStreamWriter(os, "UTF-8");
+			BufferedWriter bw = new BufferedWriter(osw); // 보조스트림 연결
+			
+			String msg = "테스트 메세지";
+			bw.write(msg);
+			System.out.println("CLIENT: [전송 메세지]: " + msg);
+			
+			bw.close();
 			
 			// 후처리
 			System.out.println("CLIENT: [클라이언트 종료]");
