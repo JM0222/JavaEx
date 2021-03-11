@@ -6,13 +6,14 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 
 public class fileEx {
-
+	static final String rootPath = System.getProperty("user.dir") + "\\MiniProject\\";
+	static final String filename = rootPath + "phonebook.txt";
 	public static void main(String[] args) {
 		BufferedReader br = null;
 		PrintWriter pw = null;
 		try {
-			br = new BufferedReader(new FileReader("읽기경로"));
-			pw = new PrintWriter(new FileWriter("타겟경로"));
+			br = new BufferedReader(new FileReader(filename));
+			pw = new PrintWriter(new FileWriter(filename));
 			String line = null;
 			while((line = br.readLine())!= null) {
 				pw.println(line);
