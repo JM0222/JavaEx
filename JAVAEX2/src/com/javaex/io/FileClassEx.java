@@ -39,7 +39,7 @@ public class FileClassEx {
 		}
 		printInfo(root);
 		
-		// 파일 삭제
+//		 파일 삭제
 		System.out.println("-->myfile.txt 삭제");
 		file.delete();
 		printInfo(root);
