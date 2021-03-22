@@ -15,5 +15,5 @@ public interface AuthorDao {
 	
 	public boolean update(AuthorVo vo);
 	
-	public boolean delete(AuthorVo vo);
+	public boolean delete(Long id);
 }
